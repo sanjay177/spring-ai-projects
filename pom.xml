@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>basic-ai-chat</module>
+        <module>basic-ollama-connect</module>
     </modules>
 
     <properties>
