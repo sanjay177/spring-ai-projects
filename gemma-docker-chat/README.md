@@ -26,3 +26,16 @@ spring.application.name=gemma-docker-chat
 spring.ai.openai.chat.options.model=ai/gemma4
 spring.ai.openai.api-key=${OPENAI_API_KEY}
 spring.ai.openai.chat.base-url=http://localhost:12434/engines
+```
+
+## Chat Options (common set of configuration options for chat models)
+model - gpt3.5-turbo
+frequencyPenalty - Reduces repetition in responses
+presencePenalty - Encourages the model to talk about new topics
+temperature - Controls Creativity vs Focused
+topP - Controls Diversity via Nucleus Sampling / Randomness
+stopSequences - Sequences that will stop the generation of text when encountered:q!
+
+maxTokens - Limits the number of tokens in the generated response
+topK - Limits the number of highest probability tokens to consider for generation
+
