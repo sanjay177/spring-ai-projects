@@ -12,6 +12,8 @@
         <module>basic-ai-chat</module>
         <module>basic-ollama-connect</module>
         <module>gemma-docker-chat</module>
+        <module>gemma-chat-memory</module>
+        <module>gemma-chat-storage</module>
     </modules>
 
     <properties>
@@ -34,6 +36,18 @@
                 <version>${spring-ai.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-starter-model-chat-memory-repository-jdbc</artifactId>
+                <version>${spring-ai.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>2.4.240</version>
+                <scope>runtime</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
